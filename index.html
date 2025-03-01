@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Password Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Şifre Oluşturucu</h2>
+
+        <div class="wrapper">
+            <div class="input-box">
+                <input type="text" disabled>
+                <span><i class="fa-solid fa-copy"></i></span>
+            </div>
+
+            <div id="weak" class="pass-indicator"></div>
+                
+            <div class="pass-lenght">
+                <div class="details">
+                    <label class="title">Şifre Uzunluğu</label>
+                    <span></span>
+                </div>  
+                <input type="range" min="1" max="30" value="15" step="1">
+            </div>
+
+            <div class="pass-settings">
+                <label class="title">Şifre Ayarları</label>
+
+                <ul class="options">
+                    <li class="option">
+                        <input type="checkbox" checked id="lowercase">
+                        <label for="lowercase">Küçük harfler (a-z)</label>
+                    </li>
+
+                    <li class="option">
+                        <input type="checkbox" id="uppercase">
+                        <label for="uppercase">Büyük harfler (A-Z)</label>
+                    </li>
+
+                    <li class="option">
+                        <input type="checkbox" id="numbers">
+                        <label for="numbers">Rakamlar (0-9)</label>
+                    </li>
+
+                    <li class="option">
+                        <input type="checkbox" id="symbols">
+                        <label for="symbols">Semboller (é-$)</label>
+                    </li>
+
+                    <li class="option">
+                        <input type="checkbox" id="exc-duplicate">
+                        <label for="exc-duplicate">Yinelemeyi Kapat</label>
+                    </li>
+
+                    <li class="option">
+                        <input type="checkbox" id="spaces">
+                        <label for="spaces">Boşluklari Dahil Et</label>
+                    </li>
+                </ul>
+            </div>
+        
+
+            <button class="generate-btn">Şifre Oluştur</button>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
